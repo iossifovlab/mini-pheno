@@ -1,0 +1,12 @@
+id: mini_pheno
+
+instrument_files:
+  - instruments/instrument_1.csv
+  - path: instruments/instrument_2.csv
+    delimiter: "\t"
+
+pedigree: pedigree.ped
+
+person_column: personId
+
+output_dir: output

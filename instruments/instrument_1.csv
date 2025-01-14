@@ -1,0 +1,13 @@
+personId,measure_1,measure_2,measure_3
+f1.dad,0.1,10,A
+f1.mom,0.2,20,B
+f1.s1,0.3,30,C
+f1.p1,0.4,40,D
+f2.dad,1.1,11,A
+f2.mom,1.2,21,B
+f2.s1,1.3,31,C
+f2.p1,1.4,41,D
+f3.dad,2.1,12,A
+f3.mom,2.2,22,B
+f3.s1,2.3,32,C
+f3.p1,2.4,42,D
