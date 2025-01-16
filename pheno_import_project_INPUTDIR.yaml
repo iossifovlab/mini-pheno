@@ -1,9 +1,15 @@
 id: mini_pheno
 
+input_dir: example_input_dir
+
 instrument_files:
   - instruments/instrument_1.csv
   - path: instruments/instrument_2.csv
     delimiter: "\t"
+
+data_dictionary:
+  files:
+    - path: data_dictionary/measure_descriptions.tsv
 
 pedigree: pedigree.ped
 

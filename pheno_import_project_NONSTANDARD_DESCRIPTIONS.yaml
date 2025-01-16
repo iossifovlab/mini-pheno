@@ -1,0 +1,25 @@
+id: mini_pheno
+
+instrument_files:
+  - instruments/instrument_1.csv
+  - path: instruments/instrument_2.csv
+    delimiter: "\t"
+
+data_dictionary:
+  files:
+    - path: measure_descriptions_nonstandard.csv
+      delimiter: ","
+      instrument: instrument_1
+      measure_column: m_name
+      description_column: desc
+  dictionary:
+    instrument_2:
+      measure_4: "The first measure of the second instrument"
+      measure_5: "The second measure of the second instrument"
+
+
+pedigree: pedigree.ped
+
+person_column: personId
+
+output_dir: output
