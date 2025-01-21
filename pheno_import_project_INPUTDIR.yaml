@@ -16,3 +16,12 @@ pedigree: pedigree.ped
 person_column: personId
 
 output_dir: output
+
+study_config:
+  regressions:
+    reg_1:
+      measure_names:
+        - measure_1
+      instrument_name: instrument_1
+      jitter: 0.1
+      display_name: "Regression one"
