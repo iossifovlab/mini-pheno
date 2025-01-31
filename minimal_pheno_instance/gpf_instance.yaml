@@ -1,0 +1,21 @@
+instance_id: minimal_instance
+
+reference_genome:
+    resource_id: "hg38/genomes/GRCh38-hg38"
+
+gene_models:
+    resource_id: "hg38/gene_models/refSeq_v20200330"
+
+cache_path: cache
+
+phenotype_images: pheno_images
+
+phenotype_storage:
+  default: storage1
+
+  storages:
+    - id: storage1
+      base_dir: pheno_storage_1_dir
+
+phenotype_data:
+  dir: pheno

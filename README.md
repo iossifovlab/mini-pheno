@@ -5,10 +5,10 @@ This example phenotype data repository contains the following data:
 - Two instruments files with a total of five measures
 - Pedigree with three quad families
 - Two measure description files (one has alternative data for demonstration purposes)
+- A GPF instance directory with a configuration file
 
 Additionally, there is a full copy of the data in an example input dir (`example_input_dir`).
 This copy is used to demonstrate the `input_dir` field in import configurations.
-
 
 ## Import configs provided
 
@@ -24,29 +24,26 @@ This import project demonstrates various overrides in specifying data dictionari
 
 ## Running the import
 
-The commands below all produce output into a directory called `output`.
-These commands also produce flag files (`*.flag`) - make sure to clean them up before running another import!
+The commands below all produce their output into a directory called `work`.
 
 ```bash
-import_tools_pheno pheno_import_project_DEFAULT.yaml
+import_phenotypes pheno_import_project_DEFAULT.yaml
 ```
 
 ```bash
-import_tools_pheno pheno_import_project_INPUTDIR.yaml
+import_phenotypes pheno_import_project_INPUTDIR.yaml
 ```
 
 ```bash
-import_tools_pheno pheno_import_project_NONSTANDARD_DESCRIPTIONS.yaml
+import_phenotypes pheno_import_project_NONSTANDARD_DESCRIPTIONS.yaml
 ```
 
 ## Building a phenotype browser DB
 
 To build a phenotype browser DB, you need to follow these steps:
 1. Run any import of your choice
-2. Create a subdirectory of your choice, for example called "pheno"
-3. Move the result of your phenotype import into this subdirectory. You should end up with something similar to `mini_pheno/pheno/output`. This is necessary in order to mimic the layout that the browser-building tool expects.
-4. Run the following command:
+2. Run the following command:
    ```bash
-   build_pheno_browser pheno --phenotype-data-id mini_pheno
+   build_pheno_browser minimal_pheno_instance/gpf_instance.yaml --phenotype-data-id mini_pheno --no-cache -j 1
    ```
-5. `mini_pheno/pheno/output` should now contain a phenotype browser database file.
+3. `minimal_pheno_instance/cache/pheno/mini_pheno` should now contain a phenotype browser database file.

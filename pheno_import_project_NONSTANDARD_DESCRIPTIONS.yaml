@@ -17,12 +17,11 @@ data_dictionary:
       measure_4: "The first measure of the second instrument"
       measure_5: "The second measure of the second instrument"
 
-
 pedigree: pedigree.ped
 
 person_column: personId
 
-output_dir: output
+work_dir: work
 
 study_config:
   regressions:
@@ -32,3 +31,9 @@ study_config:
       instrument_name: instrument_1
       jitter: 0.1
       display_name: "Regression one"
+
+gpf_instance:
+  path: minimal_pheno_instance/gpf_instance.yaml
+
+destination:
+  storage_id: storage1
