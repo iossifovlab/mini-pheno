@@ -44,6 +44,6 @@ To build a phenotype browser DB, you need to follow these steps:
 1. Run any import of your choice
 2. Run the following command:
    ```bash
-   build_pheno_browser minimal_pheno_instance/gpf_instance.yaml --phenotype-data-id mini_pheno --no-cache -j 1
+   build_pheno_browser mini_pheno --gpf-instance minimal_pheno_instance/gpf_instance.yaml --no-cache -j 1
    ```
 3. `minimal_pheno_instance/cache/pheno/mini_pheno` should now contain a phenotype browser database file.
