@@ -3,7 +3,7 @@
 ## Data provided
 This example phenotype data repository contains the following data:
 - Two instruments files with a total of five measures
-- Pedigree with three quad families
+- Pedigree with six quad families
 - Two measure description files (one has alternative data for demonstration purposes)
 - A GPF instance directory with a configuration file
 
