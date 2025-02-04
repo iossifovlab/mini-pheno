@@ -1,5 +1,5 @@
 *.flag
-output
+work
 .task-log
 minimal_pheno_instance/cache
 minimal_pheno_instance/pheno
