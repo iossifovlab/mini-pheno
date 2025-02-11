@@ -1,4 +1,4 @@
-id: mini_pheno
+id: mini_pheno_ivan_2
 
 instrument_files:
   - instruments/instrument_1.csv
@@ -15,12 +15,6 @@ person_column: personId
 
 work_dir: work
 
-study_config:
-  regressions:
-    reg_1:
-      measure_names:
-        - measure_1
-      instrument_name: instrument_1
-      jitter: 0.1
-      display_name: "Regression one"
-
+inference_config:
+  "instrument_1.measure_2":
+    histogram_type: "categorical" 

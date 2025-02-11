@@ -1,0 +1,14 @@
+id: mini_denovos
+
+input:
+  pedigree:
+    file: pedigree.ped
+
+  denovo:
+    files:
+    - de_novo_variants.txt
+    person_id: person_id
+    chrom: chrom
+    pos: pos
+    ref: ref
+    alt: alt
